@@ -1,0 +1,284 @@
+.body{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 20px;
+
+}
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgb(221, 31, 31);
+
+}
+
+.sub{
+font-size: 35px;
+color: rgb(244, 0, 0);}
+
+
+.Letras{
+color: black;
+font-size: 20px;
+}
+
+.linea{
+text-decoration: overline;
+height: 2px;
+color: black;
+background-color: black;
+
+}
+
+.contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.texto{
+    width: 60%;
+}
+
+.video video{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.video audio{
+    width: 100%;
+    display: block;
+}
+
+/* ===== Cuadros alineados (Secundario1) ===== */
+
+/* 1. Cuadrícula: dos cuadros por fila en pantalla grande, uno en celular */
+.cuadros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+/* 2. Cada cuadro: fondo, borde, esquinas y espacio interno */
+.cuadro {
+  box-sizing: border-box;
+  background-color: #F7F7F7;
+  border: 1px solid #DDDDDD;
+  border-top: 5px solid #9B1C1C;
+  border-radius: 8px;
+  padding: 16px 20px;
+}
+
+/* 3. La ficha técnica ocupa todo el ancho */
+.cuadro-ancho {
+  grid-column: 1 / -1;
+}
+
+/* 4. Colores distintos para ventajas y limitaciones */
+.cuadro-ventajas {
+  border-top-color: #2E7D32;
+}
+
+.cuadro-limitaciones {
+  border-top-color: #C77700;
+}
+
+/* 5. Títulos y textos dentro de los cuadros (mismo tamaño que el resto de tu página) */
+.cuadro h2 {
+  margin-top: 0;
+  font-size: 28px;
+  color: rgb(244, 0, 0);
+}
+
+.cuadro p,
+.cuadro li {
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
+}
+
+.cuadro ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.cuadro li {
+  margin-bottom: 8px;
+}
+
+.nota {
+  font-size: 16px;
+  font-style: italic;
+  color: #555555;
+}
+
+/* 6. Ficha técnica: pequeñas tarjetas alineadas en columnas */
+.ficha {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+
+.ficha div {
+  background-color: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.ficha dt {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+.ficha dd {
+  margin: 4px 0 0 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+/* ===== Lugar del audio (debajo del video) ===== */
+.audio-lugar {
+  margin-top: 16px;
+}
+
+.titulo-audio {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  color: rgb(244, 0, 0);
+}
+
+.aviso-audio {
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: #9B1C1C;
+  background-color: #FFF4F4;
+  border: 2px dashed rgb(244, 0, 0);
+  border-radius: 8px;
+}
+
+/* ===== Navegación entre páginas ===== */
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.navegacion a {
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #9B1C1C;
+  border-radius: 6px;
+}
+
+.navegacion a:hover {
+  background-color: rgb(244, 0, 0);
+}
+
+
+/* ===== Temas de color por página (se activan con la clase del body) ===== */
+
+/* Honda Bros: azul */
+.tema-azul .title { text-shadow: 2px 2px 5px rgb(21, 101, 192); }
+.tema-azul .sub,
+.tema-azul .cuadro h2,
+.tema-azul .titulo-audio { color: rgb(21, 101, 192); }
+.tema-azul .cuadro { border-top-color: rgb(21, 101, 192); }
+.tema-azul .cuadro-ventajas { border-top-color: #2E7D32; }
+.tema-azul .cuadro-limitaciones { border-top-color: #C77700; }
+.tema-azul .aviso-audio,
+.tema-azul .aviso-video { color: rgb(21, 101, 192); background-color: #F1F7FE; border-color: rgb(21, 101, 192); }
+.tema-azul .navegacion a { background-color: rgb(21, 101, 192); }
+.tema-azul .navegacion a:hover { background-color: rgb(13, 71, 161); }
+
+/* Yamaha XTZ: verde */
+.tema-verde .title { text-shadow: 2px 2px 5px rgb(30, 142, 62); }
+.tema-verde .sub,
+.tema-verde .cuadro h2,
+.tema-verde .titulo-audio { color: rgb(30, 142, 62); }
+.tema-verde .cuadro { border-top-color: rgb(30, 142, 62); }
+.tema-verde .cuadro-ventajas { border-top-color: #2E7D32; }
+.tema-verde .cuadro-limitaciones { border-top-color: #C77700; }
+.tema-verde .aviso-audio,
+.tema-verde .aviso-video { color: rgb(24, 110, 49); background-color: #F1FAF3; border-color: rgb(30, 142, 62); }
+.tema-verde .navegacion a { background-color: rgb(30, 142, 62); }
+.tema-verde .navegacion a:hover { background-color: rgb(20, 105, 45); }
+
+/* ===== Lugar del video (igual que el del audio) ===== */
+.aviso-video {
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: #9B1C1C;
+  background-color: #FFF4F4;
+  border: 2px dashed rgb(244, 0, 0);
+  border-radius: 8px;
+}
+
+/* ===== Cuadro comparativo (página de cierre) ===== */
+.tabla-wrap {
+  overflow-x: auto;
+}
+
+.comparativa {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+.comparativa th {
+  padding: 12px;
+  text-align: left;
+  color: white;
+  background-color: #9B1C1C;
+}
+
+.comparativa td {
+  padding: 10px 12px;
+  color: black;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.comparativa tbody tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
+.comparativa td:first-child {
+  font-weight: bold;
+}
+
+/* ===== Cierre final ===== */
+.cierre-final {
+  max-width: 1000px;
+  margin: 32px auto;
+  padding: 32px 16px;
+  text-align: center;
+  background-color: #9B1C1C;
+  border-radius: 8px;
+}
+
+.cierre-frase {
+  margin: 0;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.cierre-sub {
+  margin: 8px 0 0 0;
+  font-size: 20px;
+  color: #FFE0E0;
+}

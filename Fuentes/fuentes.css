@@ -1,0 +1,65 @@
+/* ===== Página de fuentes bibliográficas =====
+   Usa los mismos colores y letras de la página de la Yamaha XTZ
+   (la clase tema-verde de stilos.css). Aquí solo van los extras. */
+
+/* Fondo: la rueda dentada repetida por toda la página */
+.tema-verde {
+    background-image: url(RuedaDentada.png);
+    background-repeat: repeat;
+    background-color: #F2F4F8;
+}
+
+/* Título sobre una franja blanca para que se lea bien */
+.titulo-fuentes {
+    margin: 0;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Lista de referencias numerada */
+.referencias {
+    margin: 0;
+    padding-left: 32px;
+}
+
+.referencias li {
+    margin-bottom: 18px;
+    padding-left: 8px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: black;
+    text-align: left;
+}
+
+.referencias li::marker {
+    font-weight: bold;
+    color: rgb(30, 142, 62);
+}
+
+.referencias a {
+    color: rgb(24, 110, 49);
+    overflow-wrap: anywhere;
+}
+
+.referencias a:hover {
+    color: rgb(20, 105, 45);
+}
+
+/* Cierre final en verde */
+.tema-verde .cierre-final {
+    background-color: rgb(30, 142, 62);
+}
+
+.tema-verde .cierre-sub {
+    color: #E6F4EA;
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    .referencias {
+        padding-left: 20px;
+    }
+    .referencias li {
+        font-size: 18px;
+    }
+}

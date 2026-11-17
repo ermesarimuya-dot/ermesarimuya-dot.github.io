@@ -1,0 +1,95 @@
+.Body{
+background-color: rgb(255, 255, 255);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+}
+
+.Titulo{
+color: rgb(190, 37, 37);
+text-align: center;
+font-size: 25px;
+margin: 0;
+text-shadow: 2px 2px 5px rgb(194, 23, 23);
+}
+
+.sub{
+    color: red;
+font-size: 30px;
+text-align: center;
+
+}
+
+
+.Letras{
+text-align: center;
+color: black;
+font-size: 20px;
+}
+
+.Letras-2{
+color: black;
+font-size: 20px;
+}
+
+.contenedor-imagenes{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: stretch; /* <-- CAMBIA esto, antes tenías flex-start */
+}
+
+.Imagen-1, .Imagen-2{
+  flex: 1; /* <-- Esto hace que las 3 cajas tengan el mismo ancho */
+}
+
+/* UNA SOLA REGLA PARA LAS 3 FOTOS */
+.contenedor-imagenes img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.Red{
+    font-size: 20px;
+    color: red;
+}
+
+.Video{
+    text-align: center;
+gap: 20px;
+}
+
+.contenedor-moto{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.texto-moto{
+    flex: 1;
+}
+
+.DR{
+    width: 250px;
+    height: auto;
+}
+
+/* BLOQUE CON IMAGEN A LA IZQUIERDA */
+.bloque-izquierda{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.imagen-izquierda{
+    width: 250px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.texto-derecha{
+    flex: 1;
+}

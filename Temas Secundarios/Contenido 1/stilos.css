@@ -1,0 +1,215 @@
+.body{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 20px;
+
+}
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgb(221, 31, 31);
+
+}
+
+.sub{
+font-size: 35px;
+color: rgb(244, 0, 0);}
+
+
+.Letras{
+color: black;
+font-size: 20px;
+}
+
+.linea{
+text-decoration: overline;
+height: 2px;
+color: black;
+background-color: black;
+
+}
+
+.contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.texto{
+    width: 60%;
+}
+
+.video{
+    width: 40%;
+}
+
+.video video{
+    width: auto;
+    border-radius: auto;
+}
+
+/* ===== Cuadros alineados (Secundario1) ===== */
+
+/* 1. Cuadrícula: dos cuadros por fila en pantalla grande, uno en celular */
+.cuadros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+/* 2. Cada cuadro: fondo, borde, esquinas y espacio interno */
+.cuadro {
+  box-sizing: border-box;
+  background-color: #F7F7F7;
+  border: 1px solid #DDDDDD;
+  border-top: 5px solid #9B1C1C;
+  border-radius: 8px;
+  padding: 16px 20px;
+}
+
+/* 3. La ficha técnica ocupa todo el ancho */
+.cuadro-ancho {
+  grid-column: 1 / -1;
+}
+
+/* 4. Colores distintos para ventajas y limitaciones */
+.cuadro-ventajas {
+  border-top-color: #2E7D32;
+}
+
+.cuadro-limitaciones {
+  border-top-color: #C77700;
+}
+
+/* 5. Títulos y textos dentro de los cuadros (mismo tamaño que el resto de tu página) */
+.cuadro h2 {
+  margin-top: 0;
+  font-size: 28px;
+  color: rgb(244, 0, 0);
+}
+
+.cuadro p,
+.cuadro li {
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
+}
+
+.cuadro ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.cuadro li {
+  margin-bottom: 8px;
+}
+
+.nota {
+  font-size: 16px;
+  font-style: italic;
+  color: #555555;
+}
+
+/* 6. Ficha técnica: pequeñas tarjetas alineadas en columnas */
+.ficha {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+
+.ficha div {
+  background-color: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.ficha dt {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+.ficha dd {
+  margin: 4px 0 0 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+/* ===== Lugar del audio (debajo del video) ===== */
+.audio-lugar {
+  margin-top: 16px;
+}
+
+.titulo-audio {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  color: rgb(244, 0, 0);
+}
+
+.aviso-audio {
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: #9B1C1C;
+  background-color: #FFF4F4;
+  border: 2px dashed rgb(244, 0, 0);
+  border-radius: 8px;
+}
+
+/* ===== Navegación entre páginas ===== */
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.navegacion a {
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #9B1C1C;
+  border-radius: 6px;
+}
+
+.navegacion a:hover {
+  background-color: rgb(244, 0, 0);
+}
+
+/* ===== Datos rápidos (columna del costado) ===== */
+.datos-rapidos {
+  box-sizing: border-box;
+  margin-top: 16px;
+  padding: 16px 20px;
+  background-color: #F7F7F7;
+  border: 1px solid #DDDDDD;
+  border-top: 5px solid #9B1C1C;
+  border-radius: 8px;
+}
+
+.titulo-datos {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  color: rgb(244, 0, 0);
+}
+
+.datos-rapidos ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.datos-rapidos li {
+  margin-bottom: 6px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: black;
+}
